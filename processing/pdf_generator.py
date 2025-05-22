@@ -3,7 +3,7 @@ from reportlab.pdfgen import canvas
 from io import BytesIO
 
 def generate_pdf(exam, diagnosis, status_df):
-    buffer = BytesIO()  # cria buffer em memória
+    buffer = BytesIO()  
     c = canvas.Canvas(buffer, pagesize=A4)
     largura, altura = A4
 
@@ -34,6 +34,6 @@ def generate_pdf(exam, diagnosis, status_df):
             y = altura - 50
 
     c.save()
-    buffer.seek(0)  # volta o ponteiro para o início
-    return buffer.getvalue()  # retorna os bytes do PDF
+    buffer.seek(0)  
+    return buffer.getvalue()  
 
