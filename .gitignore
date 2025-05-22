@@ -1,13 +1,13 @@
-# Ambiente virtual
+
 .venv/
 
-# Arquivos Python compilados
+
 __pycache__/
 *.pyc
 
-# Configurações do VS Code
+
 .vscode/
 
-# Arquivos de log, temporários, ou sensíveis
+
 *.log
 .env
