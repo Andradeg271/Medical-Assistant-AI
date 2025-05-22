@@ -174,7 +174,7 @@ elif st.session_state.treatment == "Symptoms Second Page":
 
     # ==== Load symptoms list and add to multiselect widget ==== #
 
-    with open("model\\models_datasets\\symptom_list.json", "r", encoding="utf-8") as f:
+    with open("model/models_datasets/symptom_list.json", "r", encoding="utf-8") as f:
         symptom_list = json.load(f)
 
     st.session_state.selected_symptoms = st.multiselect("Select your symptoms", symptom_list)
